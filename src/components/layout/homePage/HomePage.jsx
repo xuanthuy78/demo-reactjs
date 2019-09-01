@@ -19,11 +19,11 @@ export class HomePage extends Component {
               <div className="result">
                 <Link className="navbar-brand" to="/">2,825 Found</Link>
               </div>
-              <form className="form-inline" action="/action_page.php">
+              <form className="item form-inline" action="/action_page.php">
                 <label className="title" htmlFor="parts-type">Parts Type :</label>
-                <input type="email" className="form-control" id="email" />
+                <input type="email" className="form-control" id="email" placeholder="Parts Type" />
                 <label lass="title" htmlFor="item-name">Item Name :</label>
-                <input type="password" className="form-control" id="pwd" />
+                <input type="password" className="form-control" id="pwd" placeholder="Item Name" />
                 <button type="submit" className="btn btn-primary"><i className="fas fa-search mr-2" /><span className="title-search">Search</span></button>
               </form>
             </div>
@@ -124,7 +124,7 @@ export class HomePage extends Component {
               <Link to="/">8</Link>
               <Link to="/">9</Link>
               <Link to="/">10</Link>
-              <Link href className="next"  to="/">...</Link>
+              <Link href className="next" to="/">...</Link>
               <Link to="/" className="last">Last</Link>
               <Link to="/"><i className="fas fa-arrow-right fa-sm" /></Link>
             </div>
