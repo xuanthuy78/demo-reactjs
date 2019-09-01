@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/minori/static/css/main.290e2ce3.chunk.css",
-    "main.js": "/minori/static/js/main.7d0f653f.chunk.js",
-    "main.js.map": "/minori/static/js/main.7d0f653f.chunk.js.map",
+    "main.css": "/minori/static/css/main.c2cc4435.chunk.css",
+    "main.js": "/minori/static/js/main.157f29d5.chunk.js",
+    "main.js.map": "/minori/static/js/main.157f29d5.chunk.js.map",
     "runtime~main.js": "/minori/static/js/runtime~main.4628267a.js",
     "runtime~main.js.map": "/minori/static/js/runtime~main.4628267a.js.map",
     "static/js/2.9070114a.chunk.js": "/minori/static/js/2.9070114a.chunk.js",
     "static/js/2.9070114a.chunk.js.map": "/minori/static/js/2.9070114a.chunk.js.map",
     "index.html": "/minori/index.html",
-    "precache-manifest.c65e2b240849a65c350698bec35197f7.js": "/minori/precache-manifest.c65e2b240849a65c350698bec35197f7.js",
+    "precache-manifest.79ae2b2fb82ac5a4b3f17fc5da737986.js": "/minori/precache-manifest.79ae2b2fb82ac5a4b3f17fc5da737986.js",
     "service-worker.js": "/minori/service-worker.js",
-    "static/css/main.290e2ce3.chunk.css.map": "/minori/static/css/main.290e2ce3.chunk.css.map",
+    "static/css/main.c2cc4435.chunk.css.map": "/minori/static/css/main.c2cc4435.chunk.css.map",
     "static/media/logo.png": "/minori/static/media/logo.873d899c.png"
   }
 }
