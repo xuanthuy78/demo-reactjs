@@ -1,0 +1,49 @@
+header .navbar {
+  background: #5280ab;
+  padding: 0.3rem 3.4375rem 0.3rem 0rem;
+  z-index: 1;
+}
+header .navbar .border-logo {
+  background: #ffffff;
+  padding: 2px 0;
+  border: 2px solid #2c4d74;
+  margin-top: -6px;
+  box-shadow: 4px 4px 4px 0px #1d3247;
+}
+header .navbar .btn-toggler {
+  font-size: 30px;
+  color: #ffffff !important;
+}
+header .navbar .form-inline .input-group {
+  width: 300px;
+}
+header .navbar .information .navbar-nav .nav-item .nav-link {
+  font-weight: 300;
+  position: relative;
+  margin-left: 20px;
+  color: #ffffff;
+}
+header .navbar .information .navbar-nav .nav-item .nav-link .badge {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  font-weight: 300;
+  font-size: 60%;
+}
+header .navbar .information .navbar-nav .clock {
+  position: relative;
+  margin-left: 20px;
+  font-size: 15px;
+}
+header .navbar .information .navbar-nav .clock.clock::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-image: linear-gradient(to right, #487198, #759abc);
+  top: 7px;
+}
+header .navbar .information .navbar-nav .clock .circle-user {
+  color: white;
+  margin-left: 5px;
+}
