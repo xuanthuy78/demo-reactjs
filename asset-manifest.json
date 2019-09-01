@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/minori/static/css/main.2cce8147.chunk.css",
+    "main.js": "/minori/static/js/main.e0265ed9.chunk.js",
+    "main.js.map": "/minori/static/js/main.e0265ed9.chunk.js.map",
+    "runtime~main.js": "/minori/static/js/runtime~main.4628267a.js",
+    "runtime~main.js.map": "/minori/static/js/runtime~main.4628267a.js.map",
+    "static/js/2.9c727f7f.chunk.js": "/minori/static/js/2.9c727f7f.chunk.js",
+    "static/js/2.9c727f7f.chunk.js.map": "/minori/static/js/2.9c727f7f.chunk.js.map",
+    "index.html": "/minori/index.html",
+    "precache-manifest.da5456bc092e2fd37fb34dd85ebc6077.js": "/minori/precache-manifest.da5456bc092e2fd37fb34dd85ebc6077.js",
+    "service-worker.js": "/minori/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/minori/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/minori/static/media/logo.5d5d9eef.svg"
+  }
+}
