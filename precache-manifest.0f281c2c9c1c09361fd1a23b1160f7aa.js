@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72be688698bb8254bdd2153ef7018bfc",
+    "revision": "f08cc282bb876999d91b144a3671d7d3",
     "url": "/minori/index.html"
   },
   {
-    "revision": "54200a3eee941e893100",
+    "revision": "622e306dbebd86e45f2a",
     "url": "/minori/static/css/2.7a1db334.chunk.css"
   },
   {
-    "revision": "626e4026dfe26e3e252e",
+    "revision": "ab6fb6db5931337a094f",
     "url": "/minori/static/css/main.bbd3ef31.chunk.css"
   },
   {
-    "revision": "54200a3eee941e893100",
-    "url": "/minori/static/js/2.004493d9.chunk.js"
+    "revision": "622e306dbebd86e45f2a",
+    "url": "/minori/static/js/2.ec68e9ec.chunk.js"
   },
   {
-    "revision": "626e4026dfe26e3e252e",
-    "url": "/minori/static/js/main.4ebca203.chunk.js"
+    "revision": "ab6fb6db5931337a094f",
+    "url": "/minori/static/js/main.1a229cee.chunk.js"
   },
   {
     "revision": "1a65db5f93bf3b7e7178",
