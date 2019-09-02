@@ -14,7 +14,7 @@ export class Header extends Component {
             </Link>
           </div>
           <div className="btn-toggler ml-5">
-            <i className="fas fa-bars" />
+            <button type="button" className="btn btn-info" onClick={this.props.handleOnSidebar}> <i className="fas fa-bars fa-lg" /></button>
           </div>
           <form className="form-inline ml-5">
             <div className="input-group">

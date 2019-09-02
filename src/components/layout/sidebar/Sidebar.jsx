@@ -22,7 +22,7 @@ export class Sidebar extends Component {
             <Link className="item title" to="/">Property</Link>
             <i className="item next fas fa-chevron-right" />
           </li>
-          <li className="items">
+          <li className="items master">
             <i className="item icon fas fa-crown fa-lg" />
             <Link className="item title" to="/">Master</Link>
             <i className="item next fas fa-chevron-right" />
