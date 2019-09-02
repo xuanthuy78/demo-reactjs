@@ -6,6 +6,7 @@ import * as callApi from "../../../services/apiCall";
 import * as actions from "../../../actions/index";
 import { Pagination } from 'antd';
 import 'antd/dist/antd.css';
+import classNames from 'classnames/bind';
 export class HomePage extends Component {
   constructor() {
     super();
@@ -55,7 +56,8 @@ export class HomePage extends Component {
       if (res && res.data) {
         this.props.onListComment(res.data);
       }
-    }
+    },
+    window.scrollTo(0, 0)
   );
     
   }
@@ -87,7 +89,12 @@ export class HomePage extends Component {
     var { comments } = this.props;
 
     return (
-      <main className="left-content">
+      <main className={
+        classNames('left-content', {
+          'sidebar-menu-hidden' : !this.props.showMenu,
+          'left-content-mobi': this.props.showMenu
+        })
+      }>
         <div className="main-header">
           <h1 className="title">Master</h1>
           <p className="description">
@@ -156,7 +163,7 @@ export class HomePage extends Component {
               className="mb-5"
               showTitle
               itemRender={this.itemRender} 
-              showTotal={(total, range) => `${total}件中 ${range[1]+1} 件～60件を表示`}
+              showTotal={(total, range) => `${total}件中 ${range[0]} 件～${range[1]}件を表示`}
             />
           </div>
         </div>

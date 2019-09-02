@@ -31,6 +31,18 @@
   background: #f7f6f5;
 }
 
+.sidebar-menu-hidden {
+  width: 100%;
+  min-height: 100%;
+  padding: 20px 60px 0px 60px;
+  margin-top: 55px;
+  background: #f7f6f5;
+}
+
+.footer-sidebar-hidden {
+  width: 100%;
+}
+
 footer {
   float: right;
   width: calc(100% - 185px);

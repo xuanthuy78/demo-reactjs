@@ -47,3 +47,12 @@ header .navbar .information .navbar-nav .clock .circle-user {
   color: white;
   margin-left: 5px;
 }
+
+header .navbar .btn-toggler {
+  margin-top: -6px;
+
+}
+.btn-info {
+  background-color: #4f7ca5 !important;
+  border-color:  #4f7ca5 !important;
+}

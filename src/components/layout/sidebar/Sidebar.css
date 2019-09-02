@@ -1,16 +1,10 @@
+/*-----------sidebar----------*/
 .sidebar-menu .nav .items {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: 1px solid #dddddd;
   padding: 10px 0px 10px 20px;
-}
-.sidebar-menu .nav .items:hover {
-  background-image: linear-gradient(to right, #436c93, #4f93b7);
-  color: white !important;
-}
-.sidebar-menu .nav .items:hover .item:hover {
-  color: white;
 }
 .sidebar-menu .nav .items .item {
   height: 30px;
@@ -29,4 +23,18 @@
   width: 10%;
   justify-content: end;
   color: #426990;
+}
+.sidebar-menu .nav .master {
+  background-image: linear-gradient(to right, #436c93, #4f93b7);
+  color: white !important;
+}
+.sidebar-menu .nav .master .icon {
+  color: white;
+}
+.sidebar-menu .nav .master .title {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-menu .nav .master .next {
+  color: white;
 }
