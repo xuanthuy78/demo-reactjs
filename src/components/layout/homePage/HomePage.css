@@ -70,10 +70,21 @@
   background-color: #fafafa !important;
   padding: 5px;
 }
+.left-content
+  .main-content
+  .box-table
+  .card
+  .card-body
+  .table
+  tbody
+  tr:nth-child(even):hover {
+  background-color: #e9e8e6 !important;
+}
 .left-content .main-content .box-table .card .card-body .table tbody tr td {
   height: 50px;
   line-height: 50px;
 }
+
 .left-content .main-content .box-table .card .card-end {
   text-align: center;
   margin: 40px 0px 50px 0px;
@@ -116,4 +127,62 @@
 .left-content .main-footer .main-pagination .pagination .last {
   padding: 4px 3px;
   font-weight: 300;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next {
+  box-shadow: 2px 2px #cccccc !important;
+}
+
+.ant-pagination-item {
+  box-shadow: 2px 2px #cccccc !important;
+}
+
+.ant-pagination-item:hover {
+  background-color: #426990 !important;
+  border: 1px solid #426990 !important;
+  box-shadow: 2px 2px #cccccc !important;
+}
+
+.ant-pagination-item-container {
+  box-shadow: none !important;
+  
+}
+
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: black !important;
+}
+
+.ant-pagination-jump-next {
+  box-shadow: none !important;
+}
+
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis, .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: black !important;
+}
+
+.ant-pagination-jump-prev  {
+  box-shadow: none !important;
+}
+
+.ant-pagination-item-active {
+  color: black !important;
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+}
+
+.ant-pagination-prev {
+  background-color: #fff !important;
+  box-shadow: 2px 2px #cccccc !important;
+}
+
+.ant-pagination-next {
+  background-color: #fff !important;
+  box-shadow: 2px 2px #cccccc !important;
+}
+
+.ant-pagination-total-text {
+  width: 450px;
 }
