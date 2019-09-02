@@ -1,1 +1,2 @@
 export const LIST_COMMENT = 'LIST_COMMENT';
+export const SEARCH_COMMENTS = 'SEARCH_COMMENTS';

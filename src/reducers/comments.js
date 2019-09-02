@@ -2,6 +2,7 @@ import * as types from './../constans/ActionTypes';
 
 var initialState = {
   listComment: [],
+  keyword: {},
 };
 
 const comments = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const comments = (state = initialState, action) => {
       return {
         ...state,
         listComment: action.data
+      }
+    case types.SEARCH_COMMENTS:
+      return {
+        ...state,
+        keyword: action.keyword
       }
     default: return {...state};
   }
