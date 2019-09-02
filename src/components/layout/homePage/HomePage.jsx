@@ -1,9 +1,91 @@
 import React, { Component } from 'react'
 import './HomePage.css';
 import { Link } from "react-router-dom";
-
+import { connect } from "react-redux";
+import * as callApi from "../../../services/apiCall";
+import * as actions from "../../../actions/index";
+import { Pagination } from 'antd';
+import 'antd/dist/antd.css';
 export class HomePage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pageNumber: 1,
+      total: 0
+    };
+  }
+
+  componentDidMount() {
+    callApi
+      .callApi("comments", "GET", null)
+      .then(res => {
+        if (res && res.data) {
+          this.setState({
+            total: res.data.length
+          })
+        }
+      }
+      );
+    this.getListComment(this.state.pageNumber);
+  }
+
+  showComments(comments) {
+    var result = null;
+    if (comments.length > 0) {
+      result = comments.map((comment, index) => {
+        return (
+          <tr key={index}>
+            <td>{comment.id}</td>
+            <td>{comment.email}</td>
+            <td>jpg</td>
+            <td>{comment.name}</td>
+            <td><i className="far fa-edit fa-lg " /></td>
+            <td><i className="far fa-trash-alt fa-lg fa-lg" /></td>
+          </tr>
+        );
+      });
+    }
+    return result;
+  }
+
+  getListComment = (number) => {
+    callApi
+    .callApi(`comments?_limit=10&_page=${number}`, "GET", null )
+    .then(res => {
+      if (res && res.data) {
+        this.props.onListComment(res.data);
+      }
+    }
+  );
+    
+  }
+
+  handlePagination = (number) => {
+    if (number !== this.state.pageNumber) {
+      this.getListComment(number);
+      this.setState({
+        pageNumber: number
+      })
+    }
+  }
+
+  onShowSizeChange(current, pageSize) {
+    console.log(current, pageSize);
+  }
+
+  itemRender(current, type, originalElement) {
+    if (type === 'prev') {
+      return <Link className="arrow-left" to="#"><i className="fas fa-arrow-left fa-sm"></i></Link>;
+    }
+    if (type === 'next') {
+      return <Link className="arrow-left" to="#"><i className="fas fa-arrow-right fa-sm"></i></Link>;
+    }
+    return originalElement;
+  } 
+
   render() {
+    var { comments } = this.props;
+
     return (
       <main className="left-content">
         <div className="main-header">
@@ -17,7 +99,7 @@ export class HomePage extends Component {
           <div className="nav-filter">
             <div className="nav-item search">
               <div className="result">
-                <Link className="navbar-brand" to="/">2,825 Found</Link>
+                <Link className="navbar-brand" to="/">{this.state.total} Found</Link>
               </div>
               <form className="item form-inline" action="/action_page.php">
                 <label className="title" htmlFor="parts-type">Parts Type :</label>
@@ -48,54 +130,7 @@ export class HomePage extends Component {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>001</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg " /></td>
-                          <td><i className="far fa-trash-alt fa-lg fa-lg" /></td>
-                        </tr>
-                        <tr>
-                          <td>002</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg" /></td>
-                          <td><i className="far fa-trash-alt fa-lg" /></td>
-                        </tr>
-                        <tr>
-                          <td>003</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg" /></td>
-                          <td><i className="far fa-trash-alt fa-lg" /></td>
-                        </tr>
-                        <tr>
-                          <td>004</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg" /></td>
-                          <td><i className="far fa-trash-alt fa-lg" /></td>
-                        </tr>
-                        <tr>
-                          <td>005</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg" /></td>
-                          <td><i className="far fa-trash-alt fa-lg" /></td>
-                        </tr>
-                        <tr>
-                          <td>006</td>
-                          <td>VMTemplate001</td>
-                          <td>lsvgs</td>
-                          <td>Description Description Description Description Descriptio…</td>
-                          <td><i className="far fa-edit fa-lg" /></td>
-                          <td><i className="far fa-trash-alt fa-lg" /></td>
-                        </tr>
+                        {this.showComments(comments)}
                       </tbody>
                     </table>
                     <div className="card-end">
@@ -108,26 +143,21 @@ export class HomePage extends Component {
           </div>
         </div>
         <div className="main-footer">
-          <div className="main-total">
-            <p>2,825件中 31件～60件を表示</p>
-          </div>
+          {/* <div className="main-total">
+           <p>{this.state.total}件中 31件～60件を表示</p>
+            </div> */} 
           <div className="main-pagination">
-            <div className="pagination">
-              <Link to="/"><i className="fas fa-arrow-left fa-sm" /></Link>
-              <Link to="/">1</Link>
-              <Link to="/">2</Link>
-              <Link to="/">3</Link>
-              <Link to="/" className="active">4</Link>
-              <Link to="/">5</Link>
-              <Link to="/">6</Link>
-              <Link to="/">7</Link>
-              <Link to="/">8</Link>
-              <Link to="/">9</Link>
-              <Link to="/">10</Link>
-              <Link href className="next" to="/">...</Link>
-              <Link to="/" className="last">Last</Link>
-              <Link to="/"><i className="fas fa-arrow-right fa-sm" /></Link>
-            </div>
+            <Pagination
+              onShowSizeChange={this.onShowSizeChange}
+              onChange={this.handlePagination}
+              defaultCurrent={3}
+              total={this.state.total}
+              current={this.state.pageNumber}
+              className="mb-5"
+              showTitle
+              itemRender={this.itemRender} 
+              showTotal={(total, range) => `${total}件中 ${range[1]+1} 件～60件を表示`}
+            />
           </div>
         </div>
         <div className="clearfix" />
@@ -136,4 +166,18 @@ export class HomePage extends Component {
   }
 }
 
-export default HomePage
+const mapStateToProps = state => {
+  return {
+    comments: state.comments.listComment,
+  };
+};
+
+const mapDispatchToProps = (dispatch, props) => {
+  return {
+    onListComment: data => {
+      dispatch(actions.listComment(data));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
