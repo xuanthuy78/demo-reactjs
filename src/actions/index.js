@@ -6,3 +6,10 @@ export const listComment = (data) => {
         data
     }
 };
+
+export const searchComments = (keyword) => {
+    return {
+        type : types.SEARCH_COMMENTS,
+        keyword
+    }
+};
