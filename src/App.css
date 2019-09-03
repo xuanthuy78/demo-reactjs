@@ -181,8 +181,19 @@
   header .navbar {
     padding: 0.3rem 0rem 0.3rem 0rem !important;
   }
-  header .navbar .btn-toggler {
+  header .navbar .border-logo {
+    background-image: url("logo-mobi.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 50px !important;
+    width: 110px !important;
+  }
+  header .navbar .border-logo .navbar-brand {
     display: none;
+  }
+  header .navbar .btn-toggler {
+    margin-left: 1rem !important;
   }
   header .navbar .form-inline {
     margin-left: 10px !important;
@@ -218,21 +229,25 @@
 
   /*-----------Sidebar-menu----------*/
   .sidebar-menu {
-    width: 85px !important;
+    width: 100px !important;
+    margin-top: 50px !important;
   }
 
   .left-content {
-    width: calc(100% - 85px) !important;
+    width: calc(100% - 100px) !important;
   }
 
   .sidebar-menu .nav .items {
-    padding: 5px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 0px !important;
   }
   .sidebar-menu .nav .items .icon {
-    width: 20%;
+    width: 100% !important;
   }
   .sidebar-menu .nav .items .title {
-    display: none;
+    width: 100% !important;
   }
   .sidebar-menu .nav .items .next {
     display: none;
@@ -273,19 +288,41 @@
   }
 }
 /* // Extra Small devices (320px and up) */
-@media (min-width: 120px) and (max-width: 479px) {
+@media (min-width: 0px) and (max-width: 479px) {
   /*-----------Header----------*/
-  header .navbar .btn-toggler {
+  header .navbar {
+    padding: 0.3rem 0rem 0.3rem 0rem !important;
+  }
+  header .navbar .border-logo {
+    background-image: url("logo-mobi.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 50px !important;
+    width: 110px !important;
+    position: relative !important;
+  }
+  header .navbar .border-logo .navbar-brand {
+    margin-right: 6.5rem !important;
+  }
+  header .navbar .border-logo .navbar-brand .images-logo {
     display: none;
+  }
+  header .navbar .btn-toggler {
+    margin-left: 1rem !important;
+    justify-content: flex-end !important;
   }
   header .navbar .form-inline {
     margin-left: 10px !important;
   }
   header .navbar .form-inline .input-group {
-    width: 150px !important;
+    width: 50px !important;
+  }
+  header .navbar .form-inline .input-group .input-group-text {
+    border-radius: 5px;
   }
   header .navbar .form-inline .input-group .form-control {
-    padding: 2px !important;
+    display: none;
   }
   header .navbar .information .navbar-nav .nav-item {
     margin-left: 0px !important;
@@ -310,21 +347,25 @@
 
   /*-----------Sidebar-menu----------*/
   .sidebar-menu {
-    width: 85px !important;
+    width: 100px !important;
+    margin-top: 50px !important;
   }
 
-  .left-content-mobi {
-    width: calc(100% - 85px) !important;
+  .left-content {
+    width: calc(100% - 100px) !important;
   }
 
   .sidebar-menu .nav .items {
-    padding: 5px !important;
+    display: flex;
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 0px !important;
   }
   .sidebar-menu .nav .items .icon {
-    width: 20%;
+    width: 100% !important;
   }
   .sidebar-menu .nav .items .title {
-    display: none;
+    width: 100% !important;
   }
   .sidebar-menu .nav .items .next {
     display: none;
