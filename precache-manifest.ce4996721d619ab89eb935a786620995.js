@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f08cc282bb876999d91b144a3671d7d3",
+    "revision": "51db88fb8480404ddce357ac75098113",
     "url": "/minori/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minori/static/css/2.7a1db334.chunk.css"
   },
   {
-    "revision": "ab6fb6db5931337a094f",
-    "url": "/minori/static/css/main.bbd3ef31.chunk.css"
+    "revision": "dff1afa014fe279ee27a",
+    "url": "/minori/static/css/main.fbbfd84a.chunk.css"
   },
   {
     "revision": "622e306dbebd86e45f2a",
     "url": "/minori/static/js/2.ec68e9ec.chunk.js"
   },
   {
-    "revision": "ab6fb6db5931337a094f",
+    "revision": "dff1afa014fe279ee27a",
     "url": "/minori/static/js/main.1a229cee.chunk.js"
   },
   {

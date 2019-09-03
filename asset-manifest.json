@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/minori/static/css/main.bbd3ef31.chunk.css",
+    "main.css": "/minori/static/css/main.fbbfd84a.chunk.css",
     "main.js": "/minori/static/js/main.1a229cee.chunk.js",
     "main.js.map": "/minori/static/js/main.1a229cee.chunk.js.map",
     "runtime~main.js": "/minori/static/js/runtime~main.4628267a.js",
@@ -9,10 +9,10 @@
     "static/js/2.ec68e9ec.chunk.js": "/minori/static/js/2.ec68e9ec.chunk.js",
     "static/js/2.ec68e9ec.chunk.js.map": "/minori/static/js/2.ec68e9ec.chunk.js.map",
     "index.html": "/minori/index.html",
-    "precache-manifest.0f281c2c9c1c09361fd1a23b1160f7aa.js": "/minori/precache-manifest.0f281c2c9c1c09361fd1a23b1160f7aa.js",
+    "precache-manifest.ce4996721d619ab89eb935a786620995.js": "/minori/precache-manifest.ce4996721d619ab89eb935a786620995.js",
     "service-worker.js": "/minori/service-worker.js",
     "static/css/2.7a1db334.chunk.css.map": "/minori/static/css/2.7a1db334.chunk.css.map",
-    "static/css/main.bbd3ef31.chunk.css.map": "/minori/static/css/main.bbd3ef31.chunk.css.map",
+    "static/css/main.fbbfd84a.chunk.css.map": "/minori/static/css/main.fbbfd84a.chunk.css.map",
     "static/media/logo.png": "/minori/static/media/logo.873d899c.png"
   }
 }
