@@ -2,7 +2,7 @@
   "name": "minori",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xuanthuy78.github.io/minori/",
+  "homepage": "https://xuanthuy78.github.io/demo-reactjs/",
   "dependencies": {
     "antd": "^3.22.2",
     "axios": "^0.19.0",
