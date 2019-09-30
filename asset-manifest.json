@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/minori/static/css/main.fbbfd84a.chunk.css",
-    "main.js": "/minori/static/js/main.113da3b7.chunk.js",
-    "main.js.map": "/minori/static/js/main.113da3b7.chunk.js.map",
-    "runtime~main.js": "/minori/static/js/runtime~main.4628267a.js",
-    "runtime~main.js.map": "/minori/static/js/runtime~main.4628267a.js.map",
-    "static/css/2.7a1db334.chunk.css": "/minori/static/css/2.7a1db334.chunk.css",
-    "static/js/2.ec68e9ec.chunk.js": "/minori/static/js/2.ec68e9ec.chunk.js",
-    "static/js/2.ec68e9ec.chunk.js.map": "/minori/static/js/2.ec68e9ec.chunk.js.map",
-    "index.html": "/minori/index.html",
-    "precache-manifest.c09a0b4b3d42ffe897239d38ed3eb15d.js": "/minori/precache-manifest.c09a0b4b3d42ffe897239d38ed3eb15d.js",
-    "service-worker.js": "/minori/service-worker.js",
-    "static/css/2.7a1db334.chunk.css.map": "/minori/static/css/2.7a1db334.chunk.css.map",
-    "static/css/main.fbbfd84a.chunk.css.map": "/minori/static/css/main.fbbfd84a.chunk.css.map",
-    "static/media/logo.png": "/minori/static/media/logo.873d899c.png"
+    "main.css": "/demo-reactjs/static/css/main.fbbfd84a.chunk.css",
+    "main.js": "/demo-reactjs/static/js/main.e67703c0.chunk.js",
+    "main.js.map": "/demo-reactjs/static/js/main.e67703c0.chunk.js.map",
+    "runtime~main.js": "/demo-reactjs/static/js/runtime~main.2c7f84f2.js",
+    "runtime~main.js.map": "/demo-reactjs/static/js/runtime~main.2c7f84f2.js.map",
+    "static/css/2.7a1db334.chunk.css": "/demo-reactjs/static/css/2.7a1db334.chunk.css",
+    "static/js/2.0590caa7.chunk.js": "/demo-reactjs/static/js/2.0590caa7.chunk.js",
+    "static/js/2.0590caa7.chunk.js.map": "/demo-reactjs/static/js/2.0590caa7.chunk.js.map",
+    "index.html": "/demo-reactjs/index.html",
+    "precache-manifest.de19788e3d7a801ce01ae912f2c7afc9.js": "/demo-reactjs/precache-manifest.de19788e3d7a801ce01ae912f2c7afc9.js",
+    "service-worker.js": "/demo-reactjs/service-worker.js",
+    "static/css/2.7a1db334.chunk.css.map": "/demo-reactjs/static/css/2.7a1db334.chunk.css.map",
+    "static/css/main.fbbfd84a.chunk.css.map": "/demo-reactjs/static/css/main.fbbfd84a.chunk.css.map",
+    "static/media/logo.png": "/demo-reactjs/static/media/logo.873d899c.png"
   }
 }
